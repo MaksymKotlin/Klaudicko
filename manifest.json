@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Klaudíčko",
+  "version": "1.0",
+  "description": "Přejmenuje Claude na Klaudíčko.",
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "klaudicko-rozsireni-2026@addon",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}
