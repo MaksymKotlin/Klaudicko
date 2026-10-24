@@ -3,11 +3,18 @@
   "name": "Klaudíčko",
   "version": "1.0",
   "description": "Přejmenuje Claude na Klaudíčko.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-32.png"
+  },
   "content_scripts": [
     {
-      "matches": ["https://claude.ai/*"],
+      "matches": ["https://claude.ai/*", "https://gemini.google.com/app/*", "https://chatgpt.com/*"],
       "js": ["content.js"]
     }
+  ],
+  "permissions": [
+    "storage"
   ],
   "browser_specific_settings": {
     "gecko": {
