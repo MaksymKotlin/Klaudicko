@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://claude.ai/*", "https://gemini.google.com/app", "https://chatgpt.com/*"],
+      "matches": ["https://claude.ai/*", "https://gemini.google.com/*", "https://chatgpt.com/*"],
       "js": ["content.js"]
     }
   ],
