@@ -5,7 +5,7 @@
   "description": "Přejmenuje Claude na Klaudíčko.",
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icons/icon-32.png"
+    "default_icon": "icons/icon.svg"
   },
   "content_scripts": [
     {
