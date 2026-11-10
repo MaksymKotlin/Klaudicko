@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb46e"/>
+      <stop offset="1" stop-color="#ff4f4a"/>
+    </linearGradient>
+  </defs>
+  <!-- pozadi ve stejnych barvach jako prepinace v popupu -->
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)"/>
+  <!-- hacek jako "ofina" -->
+  <path d="M47 13 L64 28 L81 13" fill="none" stroke="#151515" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- cerne kolecko jako jezdec prepinace -->
+  <circle cx="64" cy="74" r="40" fill="#151515"/>
+  <!-- oci -->
+  <ellipse cx="50" cy="64" rx="6" ry="7.5" fill="#ffffff"/>
+  <ellipse cx="78" cy="64" rx="6" ry="7.5" fill="#ffffff"/>
+  <!-- usmev -->
+  <path d="M44 79 Q64 104 84 79 Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"
+        stroke-linejoin="round"/>
+</svg>

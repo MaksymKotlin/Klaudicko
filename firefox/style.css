@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap');
+
+body {
+    background-color: #0F0F0F;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 20px;
+}
+
+.inputs input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+label {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+}
+
+/*
+ * Copyright (c) by David Darnes (https://codepen.io/daviddarnes/pen/LdGYVG)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+input[type="checkbox"] {
+    --size: 40px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: calc(2.2 * var(--size));
+    height: var(--size);
+    margin: 0;
+    border: 0;
+    border-radius: var(--size);
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    box-shadow: inset 0 0 0 var(--size) rgb(215 215 215 / 1);
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow .35s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: inset 0 0 0 var(--size) rgb(215 215 215 / 0);
+}
+
+input[type="checkbox"]:focus-visible {
+    outline: 2px solid #f099b5;
+    outline-offset: 2px;
+}
+
+input[type="checkbox"]:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: calc(.1 * var(--size));
+    left: calc(.1 * var(--size));
+    width: calc(.8 * var(--size));
+    height: calc(.8 * var(--size));
+    border-radius: 50%;
+    transition:
+            transform .35s ease-in-out,
+            background-position .35s ease-in-out,
+            background-size .35s ease-in-out;
+}
+
+input[type="checkbox"]::before {
+    background: linear-gradient(45deg, #000000, #000000);
+    box-shadow: 0 6px 7px rgba(0, 0, 0, .3);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(calc(1.2 * var(--size)));
+}
+
+
+input[type="checkbox"]::after {
+    background-image:
+            radial-gradient(closest-side, #ffffff 85%, transparent),
+            radial-gradient(closest-side, #ffffff 85%, transparent),
+            radial-gradient(farthest-side at 50% 0, #ffffff 95%, transparent);
+    background-repeat: no-repeat;
+    background-size:
+            calc(.08 * var(--size)) calc(.08 * var(--size)),
+            calc(.08 * var(--size)) calc(.08 * var(--size)),
+            calc(.1 * var(--size)) calc(.05 * var(--size));
+    background-position:
+            calc(.1 * var(--size)) calc(.3 * var(--size)),
+            calc(.32 * var(--size)) calc(.3 * var(--size)),
+            calc(.2 * var(--size)) calc(.5 * var(--size));
+    transform-origin: 50% 50% calc(-0.4 * var(--size));
+    backface-visibility: hidden;
+    transform: perspective(400px) translateX(0) rotateY(0deg);
+}
+
+input[type="checkbox"]:checked::after {
+    background-size:
+            calc(.08 * var(--size)) calc(.08 * var(--size)),
+            calc(.08 * var(--size)) calc(.08 * var(--size)),
+            calc(.3 * var(--size)) calc(.14 * var(--size));
+    background-position:
+            calc(.25 * var(--size)) calc(.28 * var(--size)),
+            calc(.47 * var(--size)) calc(.28 * var(--size)),
+            calc(.25 * var(--size)) calc(.46 * var(--size));
+    transform: perspective(400px) translateX(calc(1.2 * var(--size))) rotateY(360deg);
+}

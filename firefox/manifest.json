@@ -1,8 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Klaudíčko",
-  "version": "1.0",
-  "description": "Přejmenuje Claude na Klaudíčko.",
+  "version": "1.0.2",
+  "description": "Počeští názvy AI asistentů",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icons/icon.svg"

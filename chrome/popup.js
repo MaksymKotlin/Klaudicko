@@ -1,3 +1,7 @@
+if (!globalThis.browser) {
+    globalThis.browser = chrome;
+}
+
 const claudeBox = document.getElementById('InputClaude');
 const geminiBox = document.getElementById('InputGemini');
 const chatgptBox = document.getElementById('InputChatGPT');
