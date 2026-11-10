@@ -14,6 +14,24 @@
 
 <img alt="Klaudicko_menu_screenshot" src="https://github.com/MaksymKotlin/Klaudicko/blob/main/Assets/Klaudicko_menu_screenshot.png?raw=true" />
 
+## Instalace
+> **Podporované prohlížeče:** Firefox a Chrome na počítači. Mobilní prohlížeče nejsou podporované.
+
+Stáhni soubor pro svůj prohlížeč z [Releases](https://github.com/MaksymKotlin/Klaudicko/releases/latest).
+
+### Firefox
+1. V [Releases](https://github.com/MaksymKotlin/Klaudicko/releases/latest) klikni na `klaudicko-firefox-1.0.2.xpi`
+2. Firefox se zeptá, jestli povolit instalaci z github.com --> **Continue to Installation**
+3. Potvrď oprávnění tlačítkem **Add**
+4. Klikni na **OK** a Klaudíčko se objeví v liště
+
+### Chrome
+1. V [Releases](https://github.com/MaksymKotlin/Klaudicko/releases/latest) stáhni `klaudicko-chrome-1.0.2.zip` a rozbal ho do složky, kterou nebudeš mazat
+2. Otevři `chrome://extensions` a vpravo nahoře zapni **Developer mode**
+3. Klikni na **Load unpacked** a vyber rozbalenou složku
+4. Klikni na ikonu skládačky 🧩 v liště a Klaudíčko si připni
+
+> ⚠️ Rozbalenou složku nemaž ani nepřesouvej. Chrome rozšíření načítá přímo z ní.
 ## Licence
 
 Klaudíčko je volné dílo uvolněné do veřejné domény pod licencí [Unlicense](https://unlicense.org/). Můžeš ho kopírovat, upravovat, šířit i prodávat, bez jakýchkoliv podmínek.
